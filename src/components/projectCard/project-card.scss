@@ -1,0 +1,46 @@
+.project-card {
+  border-radius: 10px;
+  margin-bottom: 3rem;
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+
+    img,
+    video {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .project-card {
+    margin-bottom: 17rem;
+
+    &:nth-child(even) {
+      .project-container {
+        flex-direction: row-reverse;
+
+        .description-container {
+          margin-left: 0;
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .project-container {
+      flex-direction: row;
+
+      img,
+      video {
+        width: 50%;
+      }
+
+      .description-container {
+        margin-left: 1rem;
+      }
+    }
+  }
+}

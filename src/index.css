@@ -1,0 +1,29 @@
+html {
+  background-color: var(--bg-main);
+  overflow-x: hidden;
+  /* padding: env(safe-area-inset); */
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--text);
+}

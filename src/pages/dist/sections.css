@@ -1,0 +1,11 @@
+.sections {
+  max-width: 1200px;
+  padding-top: 6rem;
+}
+.sections .section-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--text);
+}

@@ -1,0 +1,84 @@
+.custom-button {
+  cursor: pointer;
+  appearance: none;
+  background-color: var(--transparent);
+  border: none;
+}
+
+.menu-button {
+  transition: all 0.2s ease-out;
+  font-size: 1rem;
+  color: var(--text);
+  margin: 1rem;
+  transform: skew(-15deg);
+  color: var(--hl-pink);
+}
+.menu-button:active {
+  color: var(--hl-pink);
+}
+
+.toggle-button {
+  font-size: 16px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 1px solid var(--text);
+  color: var(--text);
+}
+
+.selected {
+  background-color: var(--text);
+  color: var(--hl-pink);
+}
+
+.project-button {
+  font-size: 16px;
+  margin-bottom: 0.7rem;
+  color: var(--hl-pink);
+  border: 1px solid var(--hl-pink);
+  border-radius: 5px;
+}
+
+.visit-button {
+  transition: all 0.2s ease-out;
+  border: 1px solid var(--text);
+  padding: 1rem 2rem;
+}
+.visit-button a {
+  transition: all 0.2s ease-out;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--text);
+  transform: skew(-15deg);
+}
+.visit-button:hover {
+  border-color: var(--hl-pink);
+}
+.visit-button:hover a {
+  color: var(--hl-pink);
+}
+
+@media screen and (min-width: 769px) {
+  .menu-button {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-left: 1rem;
+    color: var(--text);
+  }
+  .menu-button:hover {
+    color: var(--hl-pink);
+  }
+  .menu-button:active {
+    color: var(-bg-main);
+  }
+
+  .form-button:hover {
+    background-color: var(--bg-secondary);
+    color: var(--text);
+  }
+}
+@media screen and (min-width: 910px) {
+  .menu-button {
+    font-size: 1rem;
+  }
+}

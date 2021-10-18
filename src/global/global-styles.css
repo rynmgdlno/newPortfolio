@@ -1,0 +1,35 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-main: rgb(234, 234, 255);
+    --bg-main-trans: rgba(234, 234, 255, 0.7);
+    --bg-secondary: rgba(0, 0, 0, 0.8);
+    --bg-menu: rgba(155, 0, 155, 0.9);
+    --border: rgb(71, 71, 71);
+    --text: rgb(33, 33, 33);
+    --hl-pink: rgba(149, 0, 255, 0.884);
+    --btn-bg: rgb(95, 95, 95);
+    --subdued: rgb(58, 65, 67);
+    --transparent: rgba(0, 0, 0, 0);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-main: rgb(0, 1, 17);
+    --bg-main-trans: rgba(0, 1, 17, 0.7);
+    --bg-secondary: rgba(0, 0, 0, 0.8);
+    --bg-menu: rgba(155, 0, 155, 0.9);
+    --border: rgb(71, 71, 71);
+    --text: rgb(224, 224, 224);
+    --hl-pink: rgba(255, 0, 149, 0.884);
+    --btn-bg: rgb(95, 95, 95);
+    --subdued: rgb(58, 65, 67);
+    --transparent: rgba(0, 0, 0, 0);
+  }
+}
+
+root {
+  --margin: 8rem;
+  --margin-mobile: 1rem;
+  --margin-tablet: 4rem;
+}

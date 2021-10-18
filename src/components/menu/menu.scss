@@ -1,0 +1,44 @@
+.menu {
+  // transition: all 200ms ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-menu);
+  @supports ((-webkit-backdrop-filter: blur(50px)) or (backdrop-filter: blur(50px))) {
+    background-color: var(--transparent);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .menu {
+    position: static;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    background: none;
+    backdrop-filter: none;
+  }
+}
+
+.menu-transitions-enter {
+  left: -100%;
+}
+.menu-transitions-enter-active {
+  left: 0;
+  transition: all .2s ease-in-out;
+}
+.menu-transitions-exit {
+  left: 0;
+}
+.menu-transitions-exit-active {
+  left: 100%;
+  transition: all .2s ease-in-out .5s;
+}

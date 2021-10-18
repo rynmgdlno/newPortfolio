@@ -1,0 +1,9 @@
+.section-icon {
+  transition: all 0.3s ease-out;
+  fill: var(--text);
+  margin-right: 2rem;
+}
+.section-icon:hover {
+  fill: var(--hl-pink);
+  transform: scale(1.1) rotate(30deg);
+}
